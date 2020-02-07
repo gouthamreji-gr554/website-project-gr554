@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="Page description" name="description">
+  <meta name="google" content="notranslate" />
+  <!-- This is the index page or the main page which by default references the facebook page -->
+  <title>Internet Presence of Goutham Reji</title>
+  <!-- Link to external style sheets. I have also imported font aweseome icons for placing icons
+  next to faceboook link -->
+  <link href="./main.82cfd66e.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- I have used the style tag to override certain styles provided by bootstrap 
+  So that i can color the buttons the way i want -->
+  <style>
+    div .fb-link a:link,
+    a:visited {
+      background-color: #3b5998;
+      outline-color: #3b5998;
+      padding: 14px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    div .fb-link :hover,
+    a:active {
+      background-color: #3b5998;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- The header class contains code for the side nav menu -->
+  <header class="">
+    <!-- Toggle side nav menu when resizing -->
+    <div class="navbar navbar-default visible-xs">
+      <button type="button" class="navbar-toggle collapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="./index.html" class="navbar-brand">Goutham Reji</a>
+    </div>
+    <nav class="sidebar">
+      <div class="navbar-collapse" id="navbar-collapse">
+        <div class="site-header hidden-xs">
+          <a class="site-brand" href="./index.html" title="">
+            <!-- Here i have used my image as sort of the website logo -->
+            <img class="img-responsive site-logo" alt="" src="./assets/images/goutham.png">
+            Goutham Reji
+          </a>
+          <p>My social media footprint</p>
+        </div>
+        <ul class="nav">
+          <li><a href="./index.html" title="">Facebook</a></li>
+          <li><a href="./instagram.html" title="">Instagram</a></li>
+          <li><a href="./linkedin.html" title="">Linkedin</a></li>
+          <li><a href="./contact.html" title="">Contact</a></li>
+        </ul>
+        <!-- Footer for the side nav menu -->
+        <nav class="nav-footer">
+          <p>© Goutham Reji | Social Media </p>
+        </nav>
+      </div>
+    </nav>
+  </header>
+  <!-- The below main class contains the main part of the Page
+  I have used bootstrap supported containers to make the page responsive -->
+  <main class="" id="main-collapse">
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        <img class="img-responsive" alt="" src="./assets/images/facebook.jpg">
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <h1>Facebook Profile</h1>
+        <h3>Joined Facebook 2007</h3>
+        <blockquote>
+          <p>As my first social media account, I find facebook an excellent channel to identify and expand your private
+            network.</p>
+        </blockquote>
+        <div>
+          <p>Click on the below link to add me on facebook.</p>
+          <!-- Providing link to the facebook menu -->
+          <a href="https://www.facebook.com/gou.livinit" class="btn btn-primary" role="button"><i
+              class="fa fa-facebook-f"> Facebook Link</i></a>
+        </div>
+      </div>
+    </div>
+    <script>
+      // These event listeners i believe are used to reload the side bar and overall
+      // help with adjusting to screen size
+      document.addEventListener("DOMContentLoaded", function (event) {
+        masonryBuild();
+      });
+    </script>
+  </main>
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      navbarToggleSidebar();
+      navActivePage();
+    });
+  </script>
+  <!-- Referencing external javascript file for added functionality -->
+  <script type="text/javascript" src="./main.85741bff.js"></script>
+</body>
+
+</html>

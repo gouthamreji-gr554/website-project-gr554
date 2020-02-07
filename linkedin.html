@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <title>Linkedin page</title>
+  <!-- Link to external style sheets.-->
+  <link href="./main.82cfd66e.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- The header class contains code for the side nav menu -->
+  <header class="">
+    <div class="navbar navbar-default visible-xs">
+      <button type="button" class="navbar-toggle collapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="./index.html" class="navbar-brand">Goutham Reji</a>
+    </div>
+    <nav class="sidebar">
+      <div class="navbar-collapse" id="navbar-collapse">
+        <div class="site-header hidden-xs">
+          <a class="site-brand" href="./index.html" title="">
+            <!-- Here i have used my image as sort of the website logo -->
+            <img class="img-responsive site-logo" alt="" src="./assets/images/goutham.png">
+            Goutham Reji
+          </a>
+          <p>My social media footprint</p>
+        </div>
+        <ul class="nav">
+          <li><a href="./index.html" title="">Facebook</a></li>
+          <li><a href="./instagram.html" title="">Instagram</a></li>
+          <li><a href="./linkedin.html" title="">Linkedin</a></li>
+          <li><a href="./contact.html" title="">Contact</a></li>
+        </ul>
+        <!-- Footer for the side nav menu -->
+        <nav class="nav-footer">
+          <p>© Goutham Reji | Social Media </p>
+        </nav>
+      </div>
+    </nav>
+  </header>
+  <!-- The below main class contains the main part of the Page
+  I have used bootstrap supported containers to make the page responsive -->
+  <main class="" id="main-collapse">
+    <div class="row">
+
+      <!-- For this page i have essentially divided the space into two parts
+      one part will have linked in information and for the other part i will display 
+      my resume -->
+
+      <div class="col-xs-12 col-md-6">
+        <h1>Linkedin Profile</h1>
+        <h3>Joined Linkedin 2016</h3>
+        <blockquote>
+          <p>A critical platform for developing my professional network.</p>
+        </blockquote>
+        <img class="img-responsive" alt="" src="./assets/images/linkedin.jpg">
+        <div>
+          <p>Click on the below link to connect on Linkedin.</p>
+          <a href="https://www.linkedin.com/in/gouthamreji/" class="btn btn-primary" role="button"><i
+              class="fa fa-linkedin"> Linkedin</i></a>
+        </div>
+      </div>
+      <!-- This part contains my resume section -->
+      <div class="col-xs-12 col-md-6">
+        <h1>Professional Resume</h1>
+
+        <!-- THe following code is taken from bootstrap website. 
+        This code enables us to diaplay pdf within our website as an object. Best part
+        is that bootstrap enables responsiveness for the object. -->
+
+        <div class='embed-responsive' style='padding-bottom:150%'>
+          <object data='./assets/images/resume.pdf' type='application/pdf' width='100%' height='100%'></object>
+        </div>
+        <div class="template-example">
+        </div>
+      </div>
+    </div>
+  </main>
+  <script>
+    // These event listeners i believe are used to reload the side bar and overall
+    // help with adjusting to screen size
+    document.addEventListener("DOMContentLoaded", function (event) {
+      navbarToggleSidebar();
+      navActivePage();
+    });
+  </script>
+  <!-- Referencing external javascript file for added functionality -->
+  <script type="text/javascript" src="./main.85741bff.js"></script>
+</body>
+
+</html>
