@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <title>Instagram page</title>
+  <!-- Link to external style sheets.-->
+  <link href="./main.82cfd66e.css" rel="stylesheet">
+</head>
+<script src="https://apis.google.com/js/api.js"></script>
+<script>
+function start() {
+  // 2. Initialize the JavaScript client library.
+  var CLIENT_ID = '928107325059-qlc78qdmru2qovlutpilhkfe7lh8t6ne.apps.googleusercontent.com';
+  var API_KEY = 'AIzaSyBirKcTHzH4zciDX3tKw6qz-bYRmBCtuRk';
+  var DISCOVERY_DOCS = ["https://sheets.googleapis.com/$discovery/rest?version=v4"];
+  var SCOPES = "https://www.googleapis.com/auth/spreadsheets";
+  gapi.client.init({
+    apiKey: API_KEY,
+    // clientId: CLIENT_ID,
+    discoveryDocs: DISCOVERY_DOCS,
+    scope: SCOPES
+  }).then(function() {
+    var spreadsheetId = '1A_7XC1v-dBgWbQTLiYZkLS1FqCihCio0arqjyTUdJ8k';
+    var range = 'Sheet1!1:2';
+    console.log(gapi.client)
+    gapi.client.sheets.spreadsheets.values.get({
+          spreadsheetId: spreadsheetId,
+          range: range
+      }).then((response) => {
+          var result = response.result;
+          console.log(result)
+          var numRows = result.values ? result.values.length : 0;
+          console.log(`${numRows} rows retrieved.`);
+      });
+  });
+};
+// 1. Load the JavaScript client library.
+gapi.load('client', start);
+</script>
+<body>
+
+</body>
+
+</html>
